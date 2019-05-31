@@ -116,10 +116,14 @@ const isBlock = function (editor: Editor, elm) {
 
 const paddEmptyBlock = function (elm) {
   if (Empty.isEmpty(elm)) {
-    const br = Element.fromHtml('<br data-mce-bogus="1">');
-    Remove.empty(elm);
-    Insert.append(elm, br);
-    return Option.some(CaretPosition.before(br.dom()));
+
+    if (elm.dom().closest('.richEditorQboxmail')) {
+        const br = Element.fromHtml('<br data-mce-bogus="1">');
+        Remove.empty(elm);
+        Insert.append(elm, br);
+        return Option.some(CaretPosition.before(br.dom()));
+    }
+
   } else {
     return Option.none();
   }
