@@ -1,4 +1,4 @@
-TinyMCE - JavaScript Library for Rich Text Editing
+TinyMCE - JavaScript Library for Rich Text Editing - Qboxmail patched
 ===================================================
 
 Building TinyMCE
