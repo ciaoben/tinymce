@@ -290,6 +290,12 @@ module.exports = function (grunt) {
         },
         files: [
           {
+            expand: true,
+            dest: 'build',
+            cwd: 'js/tinymce/',
+            src: '**'
+          },
+          {
             src: 'js/tinymce/tinymce.js',
             dest: 'js/tinymce/tinymce.js'
           },
@@ -307,7 +313,7 @@ module.exports = function (grunt) {
           },
           {
             src: 'package.json',
-            dest: 'js/tinymce/package.json'
+            dest: 'build/package.json'
           }
         ]
       },
