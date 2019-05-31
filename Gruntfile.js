@@ -304,6 +304,10 @@ module.exports = function (grunt) {
           {
             src: 'LICENSE.TXT',
             dest: 'js/tinymce/license.txt'
+          },
+          {
+            src: 'package.json',
+            dest: 'js/tinymce/package.json'
           }
         ]
       },

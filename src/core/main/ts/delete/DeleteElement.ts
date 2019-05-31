@@ -122,6 +122,8 @@ const paddEmptyBlock = function (elm) {
         Remove.empty(elm);
         Insert.append(elm, br);
         return Option.some(CaretPosition.before(br.dom()));
+    } else {
+        return Option.none();
     }
 
   } else {
